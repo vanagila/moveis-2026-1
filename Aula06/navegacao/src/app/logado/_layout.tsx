@@ -40,6 +40,34 @@ export default function Layout() {
             }} >
 
             </Tabs.Screen>
+
+            <Tabs.Screen name="fornecedor/[id]/index" options={{
+                title: 'Fornecedor',
+                tabBarIcon: ({ color, focused }) => (
+                    <Ionicons name={focused ? 'airplane' : 'airplane-outline'} size={28} color={color} />
+                ),
+            }} >
+
+            </Tabs.Screen>
+
+            <Tabs.Screen name="fornecedor/[id]/new" options={{
+                href: null,
+                title: 'Novo fornecedor',
+                tabBarIcon: ({ color, focused }) => (
+                    <Ionicons name={focused ? 'airplane' : 'airplane-outline'} size={28} color={color} />
+                ),
+            }} >
+
+            </Tabs.Screen>
+
+            <Tabs.Screen name="fornecedor/[id]/update" options={{
+                href: null,
+                title: 'Atualizar fornecedor',
+                tabBarIcon: ({ color, focused }) => (
+                    <Ionicons name={focused ? 'logo-amazon' : 'logo-amazon'} size={28} color={color} />
+                ),
+            }} >
+            </Tabs.Screen>
         </Tabs>
 
 
